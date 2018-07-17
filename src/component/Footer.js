@@ -1,15 +1,17 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 
-export default() => {
-  return (
-    <footer>
-      <ul>
-        <li>React</li>
-        <li>React Router</li>
-        <li>Axios</li>
-        <li>Love</li>
-        <li><a rel="noopener noreferrer" target="_blank" href="https://with.zonayed.me/bn">with.zonayed.me</a></li>
-      </ul>
-    </footer>
-  )
+export default class Footer extends PureComponent {
+  render() {
+    return (
+      <footer>
+        <ul>
+          <li>React</li>
+          <li>React Router</li>
+          <li>Axios</li>
+          <li>Love</li>
+          <li><a rel="noopener noreferrer" target="_blank" href="https://with.zonayed.me/bn">with.zonayed.me</a></li>
+        </ul>
+      </footer>
+    )
+  }
 }

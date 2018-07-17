@@ -19,11 +19,11 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    axios('https://with.zonayed.me/wp-json/wp/v2/posts?tags=164&order=asc&per_page=30').then(({data}) => this.setState({basics: data})).catch((err) => this.setState({basics: err}));
-    axios('https://with.zonayed.me/wp-json/wp/v2/posts?tags=158&order=asc&per_page=30').then(({data}) => this.setState({advance: data})).catch((err) => this.setState({advance: err}));
-    axios('https://with.zonayed.me/wp-json/wp/v2/posts?tags=150&order=asc&per_page=30').then(({data}) => this.setState({es6: data})).catch((err) => this.setState({es6: err}));
-    axios('https://with.zonayed.me/wp-json/wp/v2/posts?tags=168&order=asc&per_page=30').then(({data}) => this.setState({daily: data})).catch((err) => this.setState({daily: err}));
-    axios('https://with.zonayed.me/wp-json/wp/v2/posts?tags=166&order=asc&per_page=30').then(({data}) => this.setState({soft: data})).catch((err) => this.setState({soft: err}));
+    axios('https://with.zonayed.me/wp-json/wp/v2/posts?tags=164&order=asc&per_page=30&fields=id,title').then(({data}) => this.setState({basics: data}));
+    axios('https://with.zonayed.me/wp-json/wp/v2/posts?tags=158&order=asc&per_page=30&fields=id,title').then(({data}) => this.setState({advance: data}));
+    axios('https://with.zonayed.me/wp-json/wp/v2/posts?tags=150&order=asc&per_page=30&fields=id,title').then(({data}) => this.setState({es6: data}));
+    axios('https://with.zonayed.me/wp-json/wp/v2/posts?tags=168&order=asc&per_page=30&fields=id,title').then(({data}) => this.setState({daily: data}));
+    axios('https://with.zonayed.me/wp-json/wp/v2/posts?tags=166&order=asc&per_page=30&fields=id,title').then(({data}) => this.setState({soft: data}));
   }
 
   componentWillUnmount() {

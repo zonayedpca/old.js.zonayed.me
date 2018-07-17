@@ -24,7 +24,7 @@ export default class Main extends Component {
     const {data: {basics, advance, es6, daily, soft}} = this.props;
     const { delayed } = this.state;
     const delayMsg = <span>I've got a bad server... If your internet connection is not slow, please reload</span>;
-
+    
     return (
       <section className="content-area">
         {basics.length > 0 ? <Content title="JavaScript Basics" data={basics} color="#F0DB4F" topic="js-basic" /> : <div className="loading-bar"><BarLoader color={'#F0DB4F'} />{delayed ? delayMsg : ''}</div>}
