@@ -1,7 +1,7 @@
 {
-  "name": "js.zonayed.me",
+  "name": "test.zonayed.me",
   "version": "0.1.0",
-  "homepage": "https://js.zonayed.me",
+  "homepage": "https://test.zonayed.me",
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",

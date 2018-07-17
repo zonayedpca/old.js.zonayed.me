@@ -13,7 +13,7 @@ export default class SingleContent extends Component {
 
   componentWillMount() {
     const { props: { match: { params: { id } } } } = this;
-    axios(`http://with.zonayed.me/wp-json/wp/v2/posts/${id}`).then(({data}) => this.setState({data, shouldUpdate: false}));
+    axios(`https://with.zonayed.me/wp-json/wp/v2/posts/${id}`).then(({data}) => this.setState({data, shouldUpdate: false}));
     toTop();
   }
 

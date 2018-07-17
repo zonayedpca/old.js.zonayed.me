@@ -4,7 +4,6 @@ import logo from '../logo.png';
 
 export default class Footer extends PureComponent {
   render() {
-    console.log('Header');
     return (
       <header className="logo-area">
         <img src={logo} alt="Learn JavaScript" />
