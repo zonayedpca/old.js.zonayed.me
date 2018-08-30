@@ -102,6 +102,7 @@ body {
   padding: 10px 10px;
 }
 
+.section-divider,
 .single-content p {
   font-size: 21px;
   color: rgba(0,0,0,.84);

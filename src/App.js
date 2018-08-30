@@ -14,6 +14,7 @@ export default class App extends Component {
     basics: [],
     advance: [],
     es6: [],
+    dom: [],
     daily: [],
     soft: []
   }
@@ -22,6 +23,7 @@ export default class App extends Component {
     axios('https://with.zonayed.me/wp-json/wp/v2/posts?tags=164&order=asc&per_page=30&fields=id,title').then(({data}) => this.setState({basics: data}));
     axios('https://with.zonayed.me/wp-json/wp/v2/posts?tags=158&order=asc&per_page=30&fields=id,title').then(({data}) => this.setState({advance: data}));
     axios('https://with.zonayed.me/wp-json/wp/v2/posts?tags=150&order=asc&per_page=30&fields=id,title').then(({data}) => this.setState({es6: data}));
+    axios('https://with.zonayed.me/wp-json/wp/v2/posts?tags=192&order=asc&per_page=30&fields=id,title').then(({data}) => this.setState({dom: data}));
     axios('https://with.zonayed.me/wp-json/wp/v2/posts?tags=168&order=asc&per_page=30&fields=id,title').then(({data}) => this.setState({daily: data}));
     axios('https://with.zonayed.me/wp-json/wp/v2/posts?tags=166&order=asc&per_page=30&fields=id,title').then(({data}) => this.setState({soft: data}));
   }

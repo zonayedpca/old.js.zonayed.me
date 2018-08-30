@@ -9,7 +9,7 @@ export default class Footer extends PureComponent {
           <li>React Router</li>
           <li>Axios</li>
           <li>Love</li>
-          <li><a rel="noopener noreferrer" target="_blank" href="https://with.zonayed.me/bn">with.zonayed.me</a></li>
+          <li><a rel="noopener noreferrer" target="_blank" href="https://with.zonayed.me/bn">learn with zonayed</a></li>
         </ul>
       </footer>
     )
