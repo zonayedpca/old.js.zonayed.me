@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import axios from 'axios';
 
 import Header from './component/Header';
@@ -34,14 +34,14 @@ export default class App extends Component {
 
   render() {
     return (
-      <HashRouter>
+      <BrowserRouter>
         <div className="App">
           <Header />
           <Route exact path="/" render={() => <Main data={this.state} />} />
           <Route exact path="/:topic/:id" render={(props) => <SingleContent {...props} />} />
           <Footer />
         </div>
-      </HashRouter>
+      </BrowserRouter>
     );
   }
 }
