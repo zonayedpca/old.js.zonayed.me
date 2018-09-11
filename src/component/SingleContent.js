@@ -22,11 +22,17 @@ export default class SingleContent extends Component {
     return shouldUpdate;
   }
 
+  setLastRead = (id, topic, title) => {
+    localStorage.setItem('lastRead', `${id}-${topic}-${title.rendered}`);
+  }
+
   render() {
     const { state: { data } } = this;
     if(!data) return <div className="loading-bar"><BarLoader /></div>
 
+    const { props: { match: { params: { topic, id } } } } = this;
     const { state: { data: { title, content, link } } } = this;
+    this.setLastRead(id, topic, title);
     return (
       <div className="single-content">
         <Link to="/" className="button">হোম</Link>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BarLoader } from 'react-spinners';
+import { Link } from 'react-router-dom';
 
 import Content from './Content';
 
@@ -7,7 +8,9 @@ let timeOut;
 
 export default class Main extends Component {
   state = {
-    delayed: false
+    delayed: false,
+    showLastRead: true,
+    lastRead: localStorage.lastRead ? localStorage.lastRead.split('-') : null
   }
 
   componentDidMount() {
@@ -22,11 +25,18 @@ export default class Main extends Component {
 
   render() {
     const {data: {basics, advance, es6, daily, soft}} = this.props;
-    const { delayed } = this.state;
+    const { delayed, lastRead, showLastRead } = this.state;
     const delayMsg = <span>I have got a bad server... If your internet connection is not slow, please reload</span>;
 
     return (
       <section className="content-area">
+        { lastRead && showLastRead && <section className="last-read">
+          <div>
+          <p>আপনি এখানে পড়ছিলেন হয়তোঃ</p>
+          <Link to={`/${lastRead[1]}/${lastRead[0]}`}>{lastRead[2]}</Link>
+          <span onClick={() => this.setState({showLastRead:false})}>বন্ধ করুন</span>
+          </div>
+        </section>}
         {basics.length > 0 ? <Content title="জাভাস্ক্রিপ্ট ব্যাসিক" data={basics} color="#F0DB4F" topic="basic" /> : <div className="loading-bar"><BarLoader color={'#F0DB4F'} />{delayed ? delayMsg : ''}</div>}
         {advance.length > 0 ? <Content title="জাভাস্ক্রিপ্ট অ্যাডভান্স" data={advance} color="#F44336" topic="advance" /> : <div className="loading-bar"><BarLoader color={'#F44336'} />{delayed ? delayMsg : ''}</div>}
         {es6.length > 0 ? <Content title="জাভাস্ক্রিপ্ট ইএস৬" data={es6} color="#BDBDBD" topic="es6" /> : <div className="loading-bar"><BarLoader color={'#BDBDBD'} />{delayed ? delayMsg : ''}</div>}
