@@ -150,6 +150,7 @@ body {
   font-size: 24px;
   color: rgba(0,0,0,.84);
   line-height: 2;
+  text-align: justify;
 }
 
 .single-content ul {
@@ -182,6 +183,7 @@ body {
   background-color: #e7e7e7;
   padding: 30px 25px;
   margin: 45px;
+  text-align: left;
   font-family: 'consolas', monospace;
   overflow-x: scroll;
 }
@@ -244,6 +246,10 @@ footer ul li a {
     width: 100%;
   }
 
+  .content h4:before {
+    display: none;
+  }
+
   .content {
     text-align: center;
   }
@@ -255,6 +261,20 @@ footer ul li a {
     border-bottom: solid 5px;
     margin: 10px auto;
     max-width: 640px;
+  }
+
+  .single-content .button {
+    display: inline-block;
+  }
+
+  .single-content .title {
+    font-size: 32px;
+    margin: 10px 0;
+  }
+
+  .section-divider, .single-content p,
+  .single-content ul {
+    font-size: 20px;
   }
 }
 
