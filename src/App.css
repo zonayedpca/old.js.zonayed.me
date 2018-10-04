@@ -253,6 +253,10 @@ footer ul li {
   font-weight: 700;
 }
 
+footer ul li .love {
+  color: #F44336;
+}
+
 footer ul li a {
   display: inline-block;
   background-color: #000;

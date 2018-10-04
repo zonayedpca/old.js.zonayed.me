@@ -5,10 +5,7 @@ export default class Footer extends PureComponent {
     return (
       <footer>
         <ul>
-          <li>React</li>
-          <li>React Router</li>
-          <li>Axios</li>
-          <li>Love</li>
+          <li>With <span className="love">❤</span> By Zonayed Ahmed</li>
           <li><a rel="noopener noreferrer" target="_blank" href="https://with.zonayed.me/bn">learn with zonayed</a></li>
         </ul>
       </footer>
