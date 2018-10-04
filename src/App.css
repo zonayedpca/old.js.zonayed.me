@@ -24,6 +24,17 @@ body {
   text-align: center;
 }
 
+.logo-area h3 {
+  font-size: 26px;
+  color: #333;
+}
+
+.logo-area p {
+  color: #606770;
+  font-weight: 900;
+  font-size: 18px;
+}
+
 .logo-area img {
   width: 80px;
 }
@@ -122,6 +133,20 @@ body {
   font-weight: 900;
 }
 
+.btn {
+  display: block;
+  background: #333;
+  width: 100px;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 25px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 900;
+  border-radius: 4px;
+  margin: 15px 25px;
+}
+
 .single-content {
   background-color: #fff;
   padding: 45px 35px;
@@ -132,7 +157,7 @@ body {
 
 .single-content .title {
   font-size: 46px;
-  margin: 30px 0;
+  margin-bottom: 15px;
 }
 
 .single-content .button {

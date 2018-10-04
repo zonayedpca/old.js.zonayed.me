@@ -6,8 +6,9 @@ export default class Footer extends PureComponent {
   render() {
     return (
       <header className="logo-area">
-        <img src={logo} alt="Learn JavaScript" />
-        <h3>Learn JavaScript with Zonayed</h3>
+        <img src={logo} alt="Practical JavaScript" />
+        <h3>হাতেকলমে জাভাস্ক্রিপ্ট</h3>
+        <p>সম্পূর্ণ বাংলায় জাভাস্ক্রিপ্ট শিখুন</p>
       </header>
     )
   }
