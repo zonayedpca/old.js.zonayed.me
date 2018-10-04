@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { BarLoader } from 'react-spinners';
+import { Helmet } from 'react-helmet';
 
 import { createMarkup, toTop } from '../helper';
 
@@ -35,6 +36,9 @@ export default class SingleContent extends Component {
     this.setLastRead(id, topic, title);
     return (
       <React.Fragment>
+        <Helmet>
+          <title>{title.rendered} - হাতেকলমে জাভাস্ক্রিপ্ট</title>
+        </Helmet>
         <div className="btns">
           <Link to="/" className="btn btn-home">হোম</Link>
         </div>
