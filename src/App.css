@@ -133,10 +133,14 @@ body {
   font-weight: 900;
 }
 
+.btns {
+  margin-left: 25px;
+}
+
 .btn {
-  display: block;
+  display: inline-block;
   background: #333;
-  width: 100px;
+  width: auto;
   color: #fff;
   text-decoration: none;
   padding: 10px 25px;
@@ -144,7 +148,12 @@ body {
   text-align: center;
   font-weight: 900;
   border-radius: 4px;
-  margin: 15px 25px;
+  margin: 15px 0;
+}
+
+.btn-error {
+  margin-left: 15px;
+  background-color: #F44336;
 }
 
 .single-content {
@@ -243,6 +252,10 @@ footer ul {
   list-style: none;
 }
 
+footer ul.github {
+    margin-bottom: 15px;
+}
+
 footer ul li {
   display: inline;
   color: #606770;
@@ -313,8 +326,13 @@ footer ul li a {
     margin: 0 15px;
   }
 
+  .btns {
+    margin-left: 0;
+    text-align: center;
+  }
+
   .btn {
-    margin: 15px auto;
+    margin: 15px 7.5px;
   }
 
   .single-content {

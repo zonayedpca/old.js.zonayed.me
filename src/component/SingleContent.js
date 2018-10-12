@@ -41,6 +41,7 @@ export default class SingleContent extends Component {
         </Helmet>
         <div className="btns">
           <Link to="/" className="btn btn-home">হোম</Link>
+          <a rel="noopener noreferrer" target="_blank" href={`https://github.com/zonayedpca/js.zonayed.me/issues/new?title=${title.rendered}&labels=%E0%A6%B2%E0%A7%87%E0%A6%96%E0%A6%BE%E0%A7%9F%20%E0%A6%AD%E0%A7%81%E0%A6%B2&body=সমস্যা বিস্তারিতঃ `} className="btn btn-error">ভুল পেয়েছেন?</a>
         </div>
         <div className="single-content">
           <h1 className="title" dangerouslySetInnerHTML={createMarkup(title.rendered)} />
