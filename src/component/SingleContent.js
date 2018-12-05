@@ -24,7 +24,7 @@ export default class SingleContent extends Component {
   }
 
   setLastRead = (id, topic, title) => {
-    localStorage.setItem('lastRead', `${id}-${topic}-${title.rendered.replace('-', ' ')}`);
+    window.localStorage.setItem('lastRead', `${id}-${topic}-${title.rendered.replace('-', ' ')}`);
   }
 
   render() {
