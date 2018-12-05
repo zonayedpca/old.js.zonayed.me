@@ -11,7 +11,7 @@ export default class Main extends Component {
   state = {
     delayed: false,
     showLastRead: true,
-    lastRead: localStorage.lastRead ? localStorage.lastRead.split('-') : null
+    lastRead: window.localStorage.lastRead ? window.localStorage.lastRead.split('-') : null
   }
 
   componentDidMount() {
