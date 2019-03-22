@@ -21,13 +21,13 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    axios('https://with.zonayed.me/wp-json/wp/v2/posts?tags=164&order=asc&per_page=30&fields=id,title').then(({data}) => this.setState({basics: data}));
-    axios('https://with.zonayed.me/wp-json/wp/v2/posts?tags=158&order=asc&per_page=30&fields=id,title').then(({data}) => this.setState({advance: data}));
-    axios('https://with.zonayed.me/wp-json/wp/v2/posts?tags=150&order=asc&per_page=30&fields=id,title').then(({data}) => this.setState({es6: data}));
-    axios('https://with.zonayed.me/wp-json/wp/v2/posts?tags=194&order=asc&per_page=30&fields=id,title').then(({data}) => this.setState({dom: data}));
-    axios('https://with.zonayed.me/wp-json/wp/v2/posts?tags=168&order=asc&per_page=30&fields=id,title').then(({data}) => this.setState({daily: data}));
-    axios('https://with.zonayed.me/wp-json/wp/v2/posts?tags=200&order=asc&per_page=30&fields=id,title').then(({data}) => this.setState({algods: data}));
-    axios('https://with.zonayed.me/wp-json/wp/v2/posts?tags=166&order=asc&per_page=30&fields=id,title').then(({data}) => this.setState({soft: data}));
+    axios('//with.zonayed.me/wp-json/wp/v2/posts?tags=164&order=asc&per_page=30&fields=id,title').then(({data}) => this.setState({basics: data}));
+    axios('//with.zonayed.me/wp-json/wp/v2/posts?tags=158&order=asc&per_page=30&fields=id,title').then(({data}) => this.setState({advance: data}));
+    axios('//with.zonayed.me/wp-json/wp/v2/posts?tags=150&order=asc&per_page=30&fields=id,title').then(({data}) => this.setState({es6: data}));
+    axios('//with.zonayed.me/wp-json/wp/v2/posts?tags=194&order=asc&per_page=30&fields=id,title').then(({data}) => this.setState({dom: data}));
+    axios('//with.zonayed.me/wp-json/wp/v2/posts?tags=168&order=asc&per_page=30&fields=id,title').then(({data}) => this.setState({daily: data}));
+    axios('//with.zonayed.me/wp-json/wp/v2/posts?tags=200&order=asc&per_page=30&fields=id,title').then(({data}) => this.setState({algods: data}));
+    axios('//with.zonayed.me/wp-json/wp/v2/posts?tags=166&order=asc&per_page=30&fields=id,title').then(({data}) => this.setState({soft: data}));
   }
 
   componentWillUnmount() {
